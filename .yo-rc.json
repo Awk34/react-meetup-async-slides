@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Async in JavaScript",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "awk34",
+    "githubRepository": "react-meetup-async-slides"
+  }
+}
