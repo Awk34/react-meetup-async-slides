@@ -1,9 +1,4 @@
 [
     "index.md",
-    {
-        "filename": "slide-title.md",
-        "attr": {
-            "data-background": "#ff0000"
-        }
-    }
+    "stack.html"
 ]
