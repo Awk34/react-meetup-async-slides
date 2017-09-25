@@ -6,6 +6,7 @@
         "event-loop.md",
         "async-tasks.md"
     ],
+    "questions-1.md",
     "callbacks.md",
     [
         "promises-1.md",
@@ -13,10 +14,13 @@
         "promises-3.md",
         "promises-4.md"
     ],
+    "questions-2.md",
     "promise-problem.md",
     [
         "async-functions-1.md",
         "async-functions-2.md",
         "async-functions-3.md"
-    ]
+    ],
+    "questions-3.md",
+    "observables.md"
 ]
