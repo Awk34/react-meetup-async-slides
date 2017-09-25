@@ -1,0 +1,75 @@
+<h2>The Stack (synchronous)</h2>
+
+<div style="display: flex">
+    <div style="flex-grow: 1; box-shadow: none;">
+        <pre><code data-trim data-noescape style="font-size: 26px; line-height: 30px;">
+function foo(b) {
+    var a = 10;
+    return a + b + 11;
+}
+
+function bar(x) {
+    var y = 3;
+    return foo(x * y);
+}
+
+console.log(bar(7));
+        </code></pre>
+    </div>
+    <div style="flex-grow: 1">
+        <table style="font-size: 34px;">
+            <thead>
+            <tr>
+                <th>function</th>
+                <th>arguments</th>
+                <th>local vars</th>
+                <th>returns</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="fragment" data-fragment-index="7">
+                <td><code>foo</code></td>
+                <td><div class="fragment" data-fragment-index="8"><code>b = 21</code></div></td>
+                <td><div class="fragment" data-fragment-index="9"><code>a = 10</code></div></td>
+                <td>
+                    <div style="position: relative;">
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment current-visible" data-fragment-index="10"><code>a + b + 11</code></div>
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment current-visible" data-fragment-index="11"><code>10 + 21 + 11</code></div>
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment" data-fragment-index="12"><code>42</code></div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fragment" data-fragment-index="1">
+                <td><code>bar</code></td>
+                <td><div class="fragment" data-fragment-index="2"><code>x = 7</code></div></td>
+                <td><div class="fragment" data-fragment-index="3"><code>y = 3</code></div></td>
+                <td>
+                    <div style="position: relative;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%;" class="fragment current-visible" data-fragment-index="4">
+                            result of <code style="font-size: 29px;">foo(x*y)</code>
+                        </div>
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment current-visible" data-fragment-index="5">
+                            result of <code style="font-size: 29px;">foo(7*3)</code>
+                        </div>
+                        <span class="fragment fade-in" data-fragment-index="6">
+                            <span class="fragment fade-out" data-fragment-index="13">result of <code>foo(21)</code></span>
+                        </span>
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment" data-fragment-index="13"><code>42</code></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><code>console.log</code></td>
+                <td>
+                    <div style="position: relative;">
+                        <span class="fragment fade-out" data-fragment-index="14">result of <code>bar(7)</code></span>
+                        <div style="position: absolute; top: 0; left: 0;" class="fragment" data-fragment-index="14"><code>42</code></div>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
