@@ -47,7 +47,4 @@ console.log(bar(7));
 </div>
 
 
-note:
-    Put your speaker notes here.
-    You can see them pressing 's'.
 
