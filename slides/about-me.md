@@ -2,7 +2,7 @@
 
 Andrew Koroluk
 
-Architect @ Coactive (formerly know as DataVoke)
+Coactive (formerly know as DataVoke)
 
 <img src="resources/coactive_primary_logotype.png"
     alt="coactive"
